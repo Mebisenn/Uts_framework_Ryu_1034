@@ -1,0 +1,406 @@
+{
+	"info": {
+		"_postman_id": "832e3c35-8db4-443e-9e37-8e3abc5ac1ae",
+		"name": "Uts_PBF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33380213"
+	},
+	"item": [
+		{
+			"name": "CRUD Product",
+			"item": [
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/product/3",
+							"protocol": "https",
+							"host": [
+								"sennautspbf1034",
+								"sipsimpangan",
+								"com"
+							],
+							"path": [
+								"public",
+								"api",
+								"product",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/product",
+							"protocol": "https",
+							"host": [
+								"sennautspbf1034",
+								"sipsimpangan",
+								"com"
+							],
+							"path": [
+								"public",
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjMyM2IyMTRhZTY5NzVhMGYwMzRlYTc3MzU0ZGMwYzI1ZDAzNjQyZGMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNzEyODQ2MDQ2NTM1LXJoYm1mMm0zdmc1M3Nramptb3V1NDVwdnJuamE2ajA3LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNzEyODQ2MDQ2NTM1LXJoYm1mMm0zdmc1M3Nramptb3V1NDVwdnJuamE2ajA3LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE1Mjc1MzMxMzA4ODMyNDAxMDk0IiwiZW1haWwiOiJrb250YXgyMzA5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoibzAyUGdEeHBaUVFRZjk0OHJTdG4tdyIsImlhdCI6MTcxNjIxNDM5NywiZXhwIjoxNzE2MjE3OTk3fQ.jXbpOoHfccgE_0rEKYF8jDketm7uxCjAZzz8bd9GFlmuofgqm5BrIZ4A07hprQfr1YzpFkoXWecG26EtQrUfDiSWa_wMaycU0qrjDOUPjDovBWAXHnJrCv6fUZyIMQV_zGSh-5ITfyVXmLxzg9Xg_b4n5q0h5ONNpTqqBa6kUdPqDSyd9-KedD57_D3Ns7VmQGczGgqgHR6Dy4admi4dN_TdVn7zoYxi1TQcfw5GAHLwbf4EV9DL0J4w8GG7vg88JKARweQu77_PMlk6h3MXI2cLKXmUBJfwKMhUTLztDD75NDI_zm9_ar26MSpSKee-MsgpCHNYaGYwEYciKKLCLw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_id\" : 2,\r\n    \"name\" : \"Chitato\",\r\n    \"description\" : \"Produk Original\",\r\n    \"price\" : 2500,\r\n    \"image\" : \"img.jpg\",\r\n    \"expired_at\" : \"2027-12-12\",\r\n    \"modified_by\" : \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/product",
+							"protocol": "https",
+							"host": [
+								"sennautspbf1034",
+								"sipsimpangan",
+								"com"
+							],
+							"path": [
+								"public",
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_id\" : 2,\r\n    \"name\" : \"Taro\",\r\n    \"description\" : \"Produk Original\",\r\n    \"price\" : 2500,\r\n    \"image\" : \"img.jpg\",\r\n    \"expired_at\" : \"2027-12-12\",\r\n    \"modified_by\" : \"admin@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/product/3",
+							"protocol": "https",
+							"host": [
+								"sennautspbf1034",
+								"sipsimpangan",
+								"com"
+							],
+							"path": [
+								"public",
+								"api",
+								"product",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRUD Categories",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiQWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxMzYxMywiZXhwIjoxNzE2MjIwODEzfQ.eUQEY7OcV1nV4qOh6OZEDEi6tZ24570xpKJNc8ReXWU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Snack\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/categories",
+							"protocol": "https",
+							"host": [
+								"sennautspbf1034",
+								"sipsimpangan",
+								"com"
+							],
+							"path": [
+								"public",
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiQWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxMzYxMywiZXhwIjoxNzE2MjIwODEzfQ.eUQEY7OcV1nV4qOh6OZEDEi6tZ24570xpKJNc8ReXWU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/categories",
+							"protocol": "https",
+							"host": [
+								"sennautspbf1034",
+								"sipsimpangan",
+								"com"
+							],
+							"path": [
+								"public",
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiQWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxMzYxMywiZXhwIjoxNzE2MjIwODEzfQ.eUQEY7OcV1nV4qOh6OZEDEi6tZ24570xpKJNc8ReXWU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ciki\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/categories/1",
+							"protocol": "https",
+							"host": [
+								"sennautspbf1034",
+								"sipsimpangan",
+								"com"
+							],
+							"path": [
+								"public",
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiQWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxMzYxMywiZXhwIjoxNzE2MjIwODEzfQ.eUQEY7OcV1nV4qOh6OZEDEi6tZ24570xpKJNc8ReXWU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/categories/1",
+							"protocol": "https",
+							"host": [
+								"sennautspbf1034",
+								"sipsimpangan",
+								"com"
+							],
+							"path": [
+								"public",
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ryu\",\r\n    \"email\": \"ryu@gmail.com\",\r\n    \"password\": \"senna\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/register",
+					"protocol": "https",
+					"host": [
+						"sennautspbf1034",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sennautspbf1034.sipsimpangan.com/public/api/login",
+					"protocol": "https",
+					"host": [
+						"sennautspbf1034",
+						"sipsimpangan",
+						"com"
+					],
+					"path": [
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register With Oauth Google",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/google/callback",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"google",
+						"callback"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
